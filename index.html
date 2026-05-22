@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raditya Andhika Pratama | Portfolio</title>
+    <meta name="description" content="Portfolio of Raditya Andhika Pratama, Full-Stack Web Developer, IoT & Geospatial Systems Engineer.">
+    
+    <!-- Google Fonts: Outfit for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">RADITYA<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+            <a href="#contact" class="btn-nav">Contact Me</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="blob-cont">
+            <div class="yellow blob"></div>
+            <div class="red blob"></div>
+            <div class="green blob"></div>
+        </div>
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Raditya Andhika <span>Pratama</span></h1>
+            <h2 class="role">Full-Stack Web Developer | IoT & Geospatial Systems</h2>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Surabaya, Indonesia</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">Professional <span>Summary</span></h2>
+            <div class="about-content glass-card">
+                <p>Computer Engineering graduate (D-IV) specializing in full-stack web development, IoT system integration, and geospatial data analysis. Proven ability to deliver end-to-end digital solutions — from embedded hardware communication and real-time monitoring systems to responsive web interfaces and algorithm-driven simulation tools.</p>
+                <p>Experienced in professional enterprise environments with strong analytical thinking, cross-functional communication, and a collaborative problem-solving approach.</p>
+                
+                <div class="skills-highlight">
+                    <div class="skill-tag">Web Development</div>
+                    <div class="skill-tag">IoT Systems</div>
+                    <div class="skill-tag">Geospatial Data</div>
+                    <div class="skill-tag">C/C++ & Python</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="container">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">January 2024 – July 2024</div>
+                    <h3 class="timeline-title">Software Engineering Intern</h3>
+                    <h4 class="timeline-company">PT. Angkasa Pura Indonesia <span>| Sidoarjo, East Java</span></h4>
+                    <p class="timeline-subtitle">State-owned Airport Management Enterprise</p>
+                    <ul class="timeline-list">
+                        <li>Engineered a fully integrated IoT environmental monitoring system tracking real-time temperature, humidity, and light intensity across airport facilities.</li>
+                        <li>Led end-to-end hardware development including sensor configuration, microcontroller programming (C/C++), and component assembly.</li>
+                        <li>Designed and deployed a responsive web dashboard for real-time data visualization.</li>
+                        <li>Integrated an automated Telegram Bot for push notifications and periodic reporting.</li>
+                        <li>Collaborated with cross-functional enterprise teams, demonstrating adaptability and effective technical communication.</li>
+                    </ul>
+                </div>
+                
+                <!-- Volunteering Experience as smaller timeline items -->
+                <div class="timeline-item glass-card reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <h3 class="timeline-title">Organisational & Volunteering</h3>
+                    <ul class="timeline-list">
+                        <li><strong>Public Relations & Secretariat Staff</strong> — PENS Fest (Jan 2022)</li>
+                        <li><strong>Art & Sport Division Staff</strong> — Computer Engineering Student Union (Apr – Dec 2022)</li>
+                        <li><strong>Pre-Leadership Training Facilitator</strong> — PENS (Oct 2022)</li>
+                        <li><strong>Steering Committee Member</strong> — Student Orientation (Nov – Dec 2022)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-img-placeholder">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-year">2024</span>
+                        <h3>IoT Environmental Monitoring System</h3>
+                        <p class="project-type">Practical Work Project</p>
+                        <p class="project-desc">Deployed a full-stack IoT solution integrating sensor nodes with a cloud-connected web dashboard for real-time environmental monitoring in a live aviation enterprise environment. Automated alert and reporting pipelines via Telegram Bot API.</p>
+                        <div class="project-tech">
+                            <span>IoT</span>
+                            <span>C/C++</span>
+                            <span>Telegram API</span>
+                            <span>Web Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-img-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-year">2025</span>
+                        <h3>Geospatial Residential Land Expansion Simulation Tool</h3>
+                        <p class="project-type">Final Academic Project</p>
+                        <p class="project-desc">Developed a Python-based simulation app to model and predict residential land expansion using the Cellular Automata algorithm (82.6% accuracy). Processed multi-layer spatial datasets (GeoTIFF, Shapefiles) with a QT Designer + Matplotlib interface.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Geospatial</span>
+                            <span>Machine Learning</span>
+                            <span>QT Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Skills Section -->
+    <section id="education" class="education-skills section-padding">
+        <div class="container">
+            <div class="dual-col">
+                <!-- Education -->
+                <div class="edu-col">
+                    <h2 class="section-title">Education & <span>Certifications</span></h2>
+                    <div class="edu-card glass-card reveal">
+                        <div class="edu-date">July 2021 – January 2026</div>
+                        <h3>Diploma in Computer Engineering (D-IV)</h3>
+                        <h4>Politeknik Elektronika Negeri Surabaya (PENS)</h4>
+                        <p class="gpa">GPA: 3.58 / 4.00</p>
+                        <ul class="edu-list">
+                            <li>Core disciplines: software engineering, embedded systems, computer networks, database management, and digital electronics.</li>
+                            <li>Capstone project applied machine learning and geospatial modeling to urban development challenges.</li>
+                        </ul>
+                    </div>
+                    <div class="cert-card glass-card reveal">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li><strong>TOEIC English Proficiency Test (EPT)</strong> (2024)</li>
+                            <li><strong>Developer Certificate</strong> - Professional Software Development Training (2025)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Skills -->
+                <div class="skills-col">
+                    <h2 class="section-title">Technical <span>Skills</span></h2>
+                    <div class="skills-wrapper glass-card reveal">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <p>Python, JavaScript (ES6+), PHP, C/C++ (Embedded Systems)</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Web Development</h4>
+                            <p>HTML5, CSS3, JavaScript — Full-stack front-end dashboards & back-end integrations</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>IoT & Hardware</h4>
+                            <p>Microcontroller programming, sensor integration, hardware-software communication, real-time data acquisition</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Geospatial & Data</h4>
+                            <p>GIS processing, Shapefile/GeoTIFF conversion, Cellular Automata modeling, Matplotlib visualization</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Platforms</h4>
+                            <p>QT Designer, Telegram Bot API, Git/GitHub, VS Code</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Soft Skills</h4>
+                            <p>Analytical thinking, cross-functional communication, team collaboration, self-directed learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-card glass-card reveal">
+                <h2 class="section-title text-center">Get In <span>Touch</span></h2>
+                <blockquote class="quote">
+                    "Bridging the gap between the physical and digital world, one line of code at a time."
+                </blockquote>
+                
+                <div class="contact-links">
+                    <a href="mailto:radityaandhika1@gmail.com" class="contact-item" target="_blank" rel="noopener noreferrer">
+                        <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                        <span>radityaandhika1@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/6282229544272" class="contact-item" target="_blank" rel="noopener noreferrer">
+                        <div class="icon-wrap"><i class="fab fa-whatsapp"></i></div>
+                        <span>+62 822-2954-4272</span>
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/radeett._/" target="_blank" aria-label="Instagram" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/Radityaa__and" target="_blank" aria-label="X (Twitter)" class="social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/radityaandhikapratama" target="_blank" aria-label="LinkedIn" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Radeeattt" target="_blank" aria-label="GitHub" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; 2026 Raditya Andhika Pratama. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
