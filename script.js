@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function revealOnScroll() {
         const windowHeight = window.innerHeight;
-        const elementVisible = 100; // Trigger point
+        const elementVisible = 80; // Trigger point
 
         reveals.forEach(reveal => {
             const elementTop = reveal.getBoundingClientRect().top;
@@ -90,9 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
             // Add offset for navbar height
-            if (scrollY >= (sectionTop - navbar.offsetHeight - 50)) {
+            if (window.pageYOffset >= (sectionTop - navbar.offsetHeight - 80)) {
                 current = section.getAttribute('id');
             }
         });
@@ -104,4 +103,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 6. Interactive Typing Effect
+    const typingText = document.getElementById('typing-text');
+    const words = ["Full-Stack Web Developer", "IoT System Integrator", "Geospatial Data Analyst", "Computer Engineering Graduate"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeDelay = 100;
+
+    function type() {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            typingText.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            typeDelay = 50;
+        } else {
+            typingText.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            typeDelay = 120;
+        }
+
+        if (!isDeleting && charIndex === currentWord.length) {
+            isDeleting = true;
+            typeDelay = 2000; // Pause at end of word
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeDelay = 500; // Pause before typing next word
+        }
+
+        setTimeout(type, typeDelay);
+    }
+
+    if (typingText) {
+        typingText.textContent = '';
+        setTimeout(type, 1000);
+    }
 });
