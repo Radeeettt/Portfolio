@@ -598,7 +598,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
 }
 
@@ -641,6 +641,23 @@ h1, h2, h3, h4, h5, h6 {
 .project-card:hover .project-img-placeholder {
     color: var(--secondary);
     transform: scale(1.02);
+}
+
+/* AI Chatbot card — distinct teal/green accent */
+.project-card.project-ai .project-img-placeholder {
+    background: linear-gradient(135deg, rgba(5, 46, 22, 0.7), rgba(7, 10, 18, 0.9));
+    color: #25d366;
+}
+
+.project-card.project-ai:hover .project-img-placeholder {
+    color: #25d366;
+    box-shadow: inset 0 0 40px rgba(37, 211, 102, 0.08);
+}
+
+.project-card.project-ai:hover {
+    box-shadow:
+        0 20px 50px -15px rgba(0, 0, 0, 0.7),
+        0 0 40px -10px rgba(37, 211, 102, 0.15);
 }
 
 .project-info {
